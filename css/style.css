@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@400;700&family=Roboto+Serif&family=Roboto+Slab:wght@900&display=swap');:root{
+    box-sizing: border-box;
+    }
+    *,
+    ::before,
+    ::after{
+        box-sizing: inherit;
+    }
+   body{
+    margin: 0px;
+    padding: 0px;
+
+   }
+   header{
+    background-color: #23272F;
+   }
+   .main-nav{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+   }
+ 
+   .main-nav > ul > li{
+    list-style-type: none;
+   }
+   .main-nav > a{
+    text-decoration: none;
+   }
+   .main-nav > ul > li > a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+
+   }
+   .nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    position: fixed;
+    left: -100%;
+    top:70px ;
+    gap: 0;
+    flex-direction: column;
+    background-color: #23272F;
+    width:100%;
+    text-align: center;
+    transition: 0.3s;
+    margin-top: 0;
+   }
+   .nav-menu.active{
+    left:0;
+    margin-top: 0;
+   }
+   .nav-item{
+    margin: 16px 0;
+   }
+   .nav-branding{
+    font-size: 2rem;
+    font-family: 'Roboto Slab', serif;    color:#61DBFB;
+   }
+   .nav-link{
+    transition: 0.7s ease;
+   }
+   .nav-link:hover{
+    color:#61DBFB   
+    }
+    .hamburger{
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .bar{
+        display: block;
+        width:25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background-color: #fff;
+    }
+    /* End of navigation */
+
+    main h1{
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Roboto Slab', serif;
+    }
+    main .story{
+        font-family: 'Roboto Serif', serif; 
+         max-width:80%;
+        margin:0 auto  
+        }
+
+
+
+    
